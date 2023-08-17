@@ -1,0 +1,88 @@
+.detail{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-left: 50px;
+}
+.detail-aside_list{
+    list-style: none;
+    position: relative;
+    right: 0;
+    z-index: 1;
+}
+.detail-aside_list li{
+    margin: 10px;
+}
+.detail-main .vid{
+    width: 100%;
+    max-height: 700px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.detail-aside_card{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.detail-aside_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+}
+.content{
+    text-align: left;
+    padding-left: 20px;
+}
+.content p{
+    color: gray;
+    font-size: small;
+
+}
+.detail-aside_card .vid{
+    width: 230px;
+    max-height: 150px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.vid-content{
+    margin: 10px 0 0 0;
+    background-color: rgba(211, 211, 211, 0.575);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.detail-main_content h4{
+    margin: 10px 0;
+}
+.detail-aside{
+    float: right;
+    overflow: hidden;
+}
+@media (max-width: 1150px){
+    .detail{
+        display: block;
+    }
+    .detail-main, .detail-aside{
+        width: 100%;
+        text-align: left;
+    }
+    .detail-aside_card{
+        max-height: 150px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 230px auto;
+    }
+    
+    .detail-aside_card{
+        height: 230px;
+    }
+    .vid{
+        width: 100%;
+    }
+}
